@@ -1,118 +1,76 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Construction Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Schon</h1>
+            <p>Building Dreams, Creating Homes</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#difference">Schon Difference</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-    color: #2c3e50;
-}
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <h2>Welcome to Schon</h2>
+                <p>We are a leading residential construction company dedicated to delivering high-quality homes with premium features and smart designs.</p>
+            </div>
+        </section>
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Our Projects</h2>
+                <div class="project-gallery">
+                    <div class="project">Project 1</div>
+                    <div class="project">Project 2</div>
+                    <div class="project">Project 3</div>
+                </div>
+            </div>
+        </section>
 
-/* Header */
-header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+        <section id="difference" class="difference">
+            <div class="container">
+                <h2>The Schon Difference</h2>
+                <p>At Schon, we prioritize independent garden areas, premium fittings, smart home features, and superior construction quality to ensure every home we build is extraordinary.</p>
+            </div>
+        </section>
 
-header h1 {
-    font-size: 2.5em;
-}
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-/* About Section */
-.about {
-    padding: 50px 0;
-    text-align: center;
-    background: #ecf0f1;
-}
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-.about p {
-    font-size: 1.1em;
-}
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-/* Projects Section */
-.projects {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background: #3498db;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px 0;
-    background: #ecf0f1;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #2c3e50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #34495e;
-}
-
-/* Footer */
-footer {
-    background: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Schon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
